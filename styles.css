@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   display: flex;
 }
@@ -16,6 +16,16 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.notification {
+  position: absolute;
+  top: 45px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  font-size: 1rem;
 }
 
 .col h2 {
@@ -31,6 +41,7 @@ body {
 }
 
 .col button {
+  outline: none;
   border: none;
   background: transparent;
   font-size: 1.5rem;
@@ -39,4 +50,9 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s;
+}
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
